@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.content {
+  display: inline-block;
+  text-align: center;
+}
+
+.bear-gif {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 20px; /* Rounded borders */
+}
+
+button:focus {
+  outline: none;
+}
+
+.yes-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.no-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Adding some responsive design */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
